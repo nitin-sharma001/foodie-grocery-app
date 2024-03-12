@@ -1,0 +1,301 @@
+
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body{
+    width : 100%;
+    height: 100%;
+}
+.main{
+    width : 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 13vh;
+    padding-top: 3vh;
+    padding-bottom: 3vw;
+    color: white;
+    /* background-color: red; */
+    background-color: #f54747e1;
+    text-align: center;
+    font-size: 3vw;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.page1{
+    display: flex;
+    /* background-color: aqua; */
+    gap: 3vw;
+}
+.allCards{
+    margin-top: 5vw;
+    width: 45vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    gap: 1vw;
+}
+.card{
+    width: 50vw;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    background-color: aliceblue;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.img{
+    width: 8vw;
+    height: 6vw;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card p{
+    width: 14vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+    /* background-color: red; */
+}
+.card .name{
+    /* background-color: red; */
+    font-size: 1.3vw;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.card .time{
+    /* background-color: red; */
+    width: 7vw;
+    font-size: 1vw;
+}
+.card .price{
+    width: 3vw;
+    /* background-color: red; */
+    font-size: 1vw;
+    color: #6f6555;
+    font-weight: 700;
+}
+.card .del{
+    width: 3vw;
+    height: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f54747f3;
+    border-radius: 50%;
+    font-size: 1.3vw;
+    color: white;
+    cursor: pointer;
+}
+.star{
+    width: 1.6vw;
+    height: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd5d3;
+    border-radius: 50%;
+}
+.rating{
+    width: 6vw;
+    display: flex;
+    align-items: center;
+    gap: 0.4vw;
+    /* background-color: red; */
+}
+.totalAmountSection{
+    margin-top: 5vw;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10vw;
+    gap: 3vw;
+}
+.heading p{
+    font-size: 2.4vw;
+}
+
+.totalAmountSection h3{
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+.totalAmountSection h4{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+.totalAmountSection .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vw;
+    width: 50%;
+    padding: 10px 30px;
+    background-color: #f54748;
+    color: white;
+    font-size: 1vw;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+
+@media (max-width : 680px) {
+    .header{
+        width: 100%;
+        height: 10vh;
+        padding-top: 3vh;
+        padding-bottom: 3vw;
+        color: white;
+        /* background-color: red; */
+        background-color: #f54747e1;
+        text-align: center;
+        font-size: 8vw;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .page1{
+        display: flex;
+        background-color: aqua;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3vw;
+    }
+    .allCards{
+        margin-top: 10vw;
+        width: 90vw;
+        margin-left: 0vw;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: red; */
+        gap: 4vw;
+    }
+    .card{
+        width: 100%;
+        height: 20vw;
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+        background-color: aliceblue;
+        /* padding: 5px 15px; */
+        border-radius: 20px;
+    }
+    .img{
+        width: 18vw;
+        height: 18vw;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-left: 0vw;
+    }
+    .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card p{
+        width: 14vw;
+        font-size: 4vw;
+        font-weight: 500;
+        /* background-color: red; */
+    }
+    .card .name{
+        /* background-color: red; */
+        font-size: 3vw;
+        font-weight: 550;
+        text-transform: capitalize;
+    }
+    
+    .card .time{
+        /* background-color: red; */
+        width: 17vw;
+        font-size: 3vw;
+    }
+    .card .price{
+        width: 8vw;
+        /* background-color: red; */
+        font-size: 3vw;
+        color: #6f6555;
+        font-weight: 700;
+    }
+    .card .del{
+        width: 8vw;
+        height: 8vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f54747f3;
+        border-radius: 50%;
+        font-size: 5vw;
+        color: white;
+        cursor: pointer;
+    }
+   
+    .star{
+        width: 2vw;
+        height: 1.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ddd5d3;
+        border-radius: 50%;
+    }
+    .rating{
+        width: 8vw;
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        padding-right: 1vw;
+        font-size: 4vw;
+        /* background-color: red; */
+    }
+    .totalAmountSection{
+        margin-top: 15vw;
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        
+        gap: 5vw;
+    }
+    .heading p{
+        font-size: 8vw;
+        font-weight: 500;
+    }
+    
+    .totalAmountSection h3{
+        font-size: 5vw;
+        font-weight: 400;
+    }
+    .totalAmountSection h4{
+        font-size: 4vw;
+        font-weight: 400;
+    }
+    .totalAmountSection .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vw;
+        width: 70%;
+        padding: 10px 30px;
+        background-color: #f54748;
+        color: white;
+        font-size: 4vw;
+        border-radius: 10px;
+        border-style: none;
+        cursor: pointer;
+    }
+}
